@@ -15,7 +15,7 @@
 <body>
 
   <header class="header">
-    <<div class="header-top">
+    <div class="header-top">
   <div>
     <h1 class="name">Mohsin Khan</h1>
     <p class="tagline">AI & machine learning engineer · software tinkerer · Gwalior, India</p>
@@ -248,7 +248,7 @@
         </div>
         <p class="item-desc">NPTEL</p>
       </div>
-    </section>>
+    </section>
 
     <!-- Outside the Code -->
     <section class="section">
@@ -265,6 +265,11 @@
 
   <script>
   const toggleBtn = document.getElementById('theme-toggle');
+  const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'light' || savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
 
   function updateButtonText(theme) {
     toggleBtn.textContent = theme === 'dark' ? 'light' : 'dark';
