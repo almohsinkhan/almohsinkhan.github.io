@@ -1,310 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohsin Khan — AI & Systems Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0c0d0e;
-      --surface: #141618;
-      --border: #22252a;
-      --text-primary: #e6e8eb;
-      --text-muted: #8a909a;
-      --accent: #22c55e;
-      --link: #a1a7b2;
-      --link-hover: #ffffff;
-      --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      --font-mono: 'Geist Mono', monospace;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text-primary);
-      font-family: var(--font-sans);
-      font-size: 14.5px;
-      line-height: 1.65;
-      padding: 3.5rem 1.25rem;
-      display: flex;
-      justify-content: center;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 650px;
-    }
-
-    /* Header */
-    header {
-      margin-bottom: 2.75rem;
-    }
-
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 0.5rem;
-    }
-
-    h1 {
-      font-size: 1.25rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      color: #fff;
-    }
-
-    .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.8rem;
-      color: var(--accent);
-      font-family: var(--font-mono);
-    }
-
-    .status-dot {
-      width: 6px;
-      height: 6px;
-      background: var(--accent);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 12px;
-      font-size: 0.85rem;
-      font-family: var(--font-mono);
-      margin-bottom: 1.25rem;
-    }
-
-    .nav-links a {
-      color: var(--link);
-      text-decoration: none;
-      transition: color 0.15s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--link-hover);
-    }
-
-    .bio {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-
-    /* Section Styling */
-    section {
-      margin-bottom: 2.75rem;
-    }
-
-    .section-title {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: lowercase;
-      color: var(--text-muted);
-      margin-bottom: 1.25rem;
-      padding-bottom: 0.35rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    /* Item Blocks */
-    .item {
-      margin-bottom: 1.5rem;
-    }
-
-    .item:last-child {
-      margin-bottom: 0;
-    }
-
-    .item-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 0.25rem;
-    }
-
-    .item-title {
-      font-weight: 500;
-      color: #fff;
-      font-size: 0.95rem;
-    }
-
-    .item-title a {
-      color: #fff;
-      text-decoration: none;
-      border-bottom: 1px dotted var(--text-muted);
-    }
-
-    .item-title a:hover {
-      border-bottom-style: solid;
-    }
-
-    .item-sub {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      margin-bottom: 0.4rem;
-    }
-
-    .item-date {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
-
-    .item-desc {
-      color: #b0b5be;
-      font-size: 0.9rem;
-      line-height: 1.55;
-    }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 0.5rem;
-    }
-
-    .tag {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text-muted);
-      padding: 1px 6px;
-      border-radius: 4px;
-    }
-
-    footer {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-top: 3.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohsin Khan — AI & ML Engineer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <header>
-      <div class="header-top">
-        <h1>Mohsin Khan</h1>
-        <div class="status-badge">
-          <span class="status-dot"></span> Open to roles
-        </div>
+
+  <header class="header">
+    <div class="header-top">
+      <div>
+        <h1 class="name">Mohsin Khan</h1>
+        <p class="tagline">AI & machine learning engineer · software tinkerer · Gwalior, India</p>
       </div>
-      <div class="nav-links">
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <span>·</span>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        <span>·</span>
-        <a href="mailto:your-email@example.com">Email</a>
-        <span>·</span>
-        <a href="/resume.pdf" target="_blank">Resume</a>
-      </div>
-      <p class="bio">
-        Software engineer focused on AI engineering, systems, and distributed backends. Building custom deep learning pipelines, agentic RAG frameworks, and local speech pipelines.
+      <div class="status-badge">Open to Roles</div>
+    </div>
+    
+    <nav class="nav-links">
+      <a href="https://github.com/almohsinkhan" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://linkedin.com/in/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:your-email@example.com">Email</a>
+      <a href="./resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About / Overview -->
+    <section class="section">
+      <p class="lead">
+        I’m a final-year B.Tech student in Artificial Intelligence and Data Science at Madhav Institute of Technology and Science (MITS), Gwalior, graduating in 2027. I enjoy understanding how systems work under the hood—not just using libraries, but building, testing, and improving the pieces that make them work.
       </p>
-    </header>
+      <p class="lead" style="margin-top: 1rem;">
+        I work across machine learning, LLM applications, computer vision, and systems programming. My projects range from a neural-network framework written from scratch in C++ to retrieval-augmented generation pipelines and computer-vision experiments. I’m especially interested in practical AI engineering: making models useful, systems reliable, and implementations efficient.
+      </p>
+      <p class="lead" style="margin-top: 1rem; color: var(--text-muted); font-size: 0.95rem;">
+        Currently exploring AI/ML engineering, applied research, and software engineering opportunities.
+      </p>
+    </section>
 
-    <section>
-      <h2 class="section-title">experience</h2>
-      
+    <!-- Experience -->
+    <section class="section">
+      <h2 class="section-title">Experience</h2>
+
       <div class="item">
         <div class="item-header">
-          <div class="item-title">AI & Systems Intern · Venura Tech</div>
-          <div class="item-date">May 2026 — Jul 2026</div>
+          <span class="role">AI & Systems Intern — <strong>Venura Tech</strong></span>
+          <span class="date">May 2026 — Jul 2026</span>
         </div>
-        <div class="item-sub">Remote</div>
+        <p class="item-sub">Remote</p>
         <p class="item-desc">
-          Architected and shipped an agentic Corrective RAG (CRAG) platform. Integrated multi-hop retrieval with vector store failovers, semantic reranking, and dynamic query decomposition.
+          Worked on an agentic Corrective RAG (CRAG) platform focused on improving retrieval quality and answer reliability. The system brought together multi-hop retrieval, vector-store fallback strategies, semantic reranking, and dynamic query decomposition to help recover when an initial retrieval pass was insufficient.
         </p>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">featured projects</h2>
+    <!-- Selected Projects -->
+    <section class="section">
+      <h2 class="section-title">Selected Projects</h2>
 
       <div class="item">
         <div class="item-header">
-          <div class="item-title"><a href="https://github.com/yourusername/NeuroFroge" target="_blank">NeuroFroge</a></div>
-          <div class="item-date">C++ · Systems</div>
+          <a class="item-link" href="#" target="_blank">NeuroFroge — Neural-network framework in C++ ↗</a>
+          <span class="date">C++ · Deep Learning</span>
         </div>
         <p class="item-desc">
-          Neural network framework built from scratch in C++. Optimized matrix multiplication access patterns and SIMD operations, cutting Fashion-MNIST training time from 2,634s down to 231s.
+          A neural-network framework built from first principles, including N-dimensional tensors, matrix operations, linear layers, activation functions, cross-entropy loss, backpropagation, and SGD. Added mini-batch training, gradient accumulation, broadcasting, stride-based views, and zero-copy reshape/transpose operations. Trained a 784 → 128 → 10 classifier on Fashion-MNIST and experimented with memory access and matrix-multiplication optimizations.
         </p>
-        <div class="tag-list">
-          <span class="tag">C++</span>
-          <span class="tag">BLAS</span>
-          <span class="tag">Memory Alignment</span>
-        </div>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <div class="item-title"><a href="https://github.com/yourusername/DocuTrust" target="_blank">DocuTrust</a></div>
-          <div class="item-date">Python · FastAPI</div>
+          <a class="item-link" href="#" target="_blank">Corrective RAG / DocuTrust ↗</a>
+          <span class="date">Python · LangGraph · FastAPI</span>
         </div>
         <p class="item-desc">
-          Enterprise Corrective RAG engine with LangGraph state orchestration, FAISS indexing, cross-encoder reranking, and self-correcting web search fallback.
+          A retrieval-augmented generation system designed to improve answers when the first retrieval attempt is weak. Uses LangGraph for workflow orchestration, FAISS for vector search, reranking, and a fallback search path. The project reflects my interest in retrieval quality, tool orchestration, and building LLM applications as testable software systems.
         </p>
-        <div class="tag-list">
-          <span class="tag">FastAPI</span>
-          <span class="tag">LangGraph</span>
-          <span class="tag">FAISS</span>
-          <span class="tag">Docker</span>
-        </div>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <div class="item-title"><a href="https://github.com/yourusername/local-ai-assistant" target="_blank">Local Voice AI Assistant</a></div>
-          <div class="item-date">Python · Edge AI</div>
+          <a class="item-link" href="#" target="_blank">Local AI Assistant ↗</a>
+          <span class="date">Python · Local Inference · Speech</span>
         </div>
         <p class="item-desc">
-          Real-time edge conversational agent operating fully offline using Faster-Whisper, Ollama local model inference, and Kokoro TTS with Silero voice-activity detection.
+          An experiment in a voice-based assistant with an emphasis on running components locally. The workflow combines speech recognition, a local language model through Ollama, text-to-speech, and voice-activity detection. It explores how to make an assistant useful with fewer dependencies on cloud APIs and network access.
         </p>
-        <div class="tag-list">
-          <span class="tag">Faster-Whisper</span>
-          <span class="tag">Ollama</span>
-          <span class="tag">Kokoro TTS</span>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <a class="item-link" href="#" target="_blank">MagicRead — Gesture-controlled PDF reader ↗</a>
+          <span class="date">Python · Computer Vision</span>
+        </div>
+        <p class="item-desc">
+          A hands-free PDF-reading prototype using OpenCV and MediaPipe to interpret gestures, PyMuPDF to work with PDF documents, and Tkinter for the interface.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role"><strong>Document Denoising</strong></span>
+          <span class="date">PyTorch · Image Restoration</span>
+        </div>
+        <p class="item-desc">
+          Explored encoder–decoder and U-Net-style architectures for grayscale document denoising using paired noisy and clean document images. The focus was on preparing aligned data and evaluating deep-learning approaches to image restoration.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role"><strong>DenseNet121 Image Classification</strong></span>
+          <span class="date">PyTorch · Transfer Learning</span>
+        </div>
+        <p class="item-desc">
+          Fine-tuned a pretrained DenseNet121 model for an image-classification task, worked through GPU-memory constraints, and evaluated the trained model on a held-out test set. Recorded test accuracy: approximately 89.7%.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role"><strong>Egg Dataset Exploration</strong></span>
+          <span class="date">Python · Computer Vision</span>
+        </div>
+        <p class="item-desc">
+          Prepared and explored a Roboflow egg-image dataset with train, validation, and test splits. Investigated image properties, annotation structure, and edge cases such as partial eggs and low-contrast boundaries as groundwork for segmentation experiments.
+        </p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role"><strong>Recommendation System</strong></span>
+          <span class="date">Python · Machine Learning</span>
+        </div>
+        <p class="item-desc">
+          Implemented popularity-based and content-based recommendation approaches, exploring how item features and interaction patterns can be used to produce relevant suggestions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Technical Interests & Tools -->
+    <section class="section">
+      <h2 class="section-title">Technical Interests & Tools</h2>
+      <div class="skill-grid">
+        <div>
+          <span class="skill-category">Languages:</span>
+          <span>Python, C++, SQL, Bash</span>
+        </div>
+        <div>
+          <span class="skill-category">Machine Learning:</span>
+          <span>PyTorch, scikit-learn, Transformers, OpenCV, MediaPipe, NumPy, Pandas</span>
+        </div>
+        <div>
+          <span class="skill-category">LLM Engineering:</span>
+          <span>LangChain, LangGraph, LlamaIndex, RAG, embeddings, FAISS, ChromaDB, Ollama, Groq</span>
+        </div>
+        <div>
+          <span class="skill-category">Backend & Tooling:</span>
+          <span>FastAPI, PostgreSQL, MongoDB, Docker, Git, Linux, pytest</span>
+        </div>
+        <div>
+          <span class="skill-category">Focus Areas:</span>
+          <span>Neural-network internals, efficient tensor operations, retrieval evaluation, local inference, computer vision, and reproducible experiments.</span>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">writing & talks</h2>
+    <!-- Education -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
       <div class="item">
         <div class="item-header">
-          <div class="item-title">Optimizing CPU Matmul Kernels for Neural Nets</div>
-          <div class="item-date">2026</div>
+          <span class="role"><strong>B.Tech in Artificial Intelligence & Data Science</strong></span>
+          <span class="date">Expected 2027</span>
+        </div>
+        <p class="item-sub">Madhav Institute of Technology and Science (MITS), Gwalior</p>
+        <p class="item-desc">CGPA: 6.95</p>
+      </div>
+    </section>
+
+    <!-- Certifications & Coursework -->
+    <section class="section">
+      <h2 class="section-title">Certifications & Coursework</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role">Generative AI for Computer Vision — <strong>NPTEL Elite</strong></span>
+          <span class="date">Jul — Oct 2026</span>
+        </div>
+        <p class="item-desc">IIT Guwahati · 12-week course · Score: 85% · 4 recommended credits</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role">Deep Learning for Natural Language Processing — <strong>NPTEL</strong></span>
+          <span class="date">Jul — Oct 2026</span>
+        </div>
+        <p class="item-desc">IIT Kharagpur · 12-week course · Score: 53% · 4 recommended credits</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role">Oracle Agentic AI Certified Foundations Associate</span>
+          <span class="date">Aug 2026</span>
+        </div>
+        <p class="item-desc">Oracle · AI foundations and agentic AI</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role">Introduction to LangChain — Python</span>
+          <span class="date">Aug 2026 — Exp. Aug 2028</span>
+        </div>
+        <p class="item-desc">LangChain Foundation</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role">LangGraph Essentials — Python</span>
+          <span class="date">Jun 2026</span>
+        </div>
+        <p class="item-desc">LangChain Foundation</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role">SQL (Basic) Certificate</span>
+          <span class="date">May 2026</span>
+        </div>
+        <p class="item-desc">HackerRank</p>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="role">Business Intelligence & Analytics</span>
+          <span class="date">Apr 2026</span>
+        </div>
+        <p class="item-desc">NPTEL</p>
+      </div>
+    </section>
+
+    <!-- Notes & Writing -->
+    <section class="section">
+      <h2 class="section-title">Notes & Writing</h2>
+      <div class="item">
+        <div class="item-header">
+          <span class="role"><strong>Optimizing CPU matrix multiplication for neural networks</strong></span>
+          <span class="date">2026</span>
         </div>
         <p class="item-desc">
-          A deep dive into cache hierarchy, loop tiling, and cache misses during dense matrix multiplication in C++.
+          Technical notes and experiments around matrix-multiplication access patterns, cache behavior, loop structure, and performance in C++. This reflects a broader interest in understanding the systems beneath machine-learning workloads.
         </p>
       </div>
     </section>
 
-    <footer>
-      <span>Mohsin Khan</span>
-      <span>Gwalior, IN</span>
-    </footer>
+    <!-- Outside the Code -->
+    <section class="section">
+      <h2 class="section-title">Outside the Code</h2>
+      <p class="item-desc" style="line-height: 1.7;">
+        I enjoy watching films, reading, observing how people think, and spending time with ideas. I’m curious about the connections between technology, society, and everyday life—and I like learning by building small experiments of my own.
+      </p>
+    </section>
   </main>
+
+  <footer class="footer">
+    <p>Mohsin Khan · Gwalior, India · Updated November 2026</p>
+  </footer>
+
 </body>
 </html>
