@@ -4,18 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohsin Khan — AI & ML Engineer</title>
+  
+  <!-- Fonts matching kriyanshii.github.io style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="header">
-    <div class="header-top">
-      <div>
-        <h1 class="name">Mohsin Khan</h1>
-        <p class="tagline">AI & machine learning engineer · software tinkerer · Gwalior, India</p>
-      </div>
-      <div class="status-badge">Open to Roles</div>
-    </div>
+    <<div class="header-top">
+  <div>
+    <h1 class="name">Mohsin Khan</h1>
+    <p class="tagline">AI & machine learning engineer · software tinkerer · Gwalior, India</p>
+  </div>
+  <div style="display: flex; gap: 0.5rem; align-items: center;">
+    <div class="status-badge">Open to Roles</div>
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">theme</button>
+  </div>
+</div>
     
     <nav class="nav-links">
       <a href="https://github.com/almohsinkhan" target="_blank" rel="noreferrer">GitHub</a>
@@ -61,7 +70,7 @@
 
       <div class="item">
         <div class="item-header">
-          <a class="item-link" href="#" target="_blank">NeuroFroge — Neural-network framework in C++ ↗</a>
+          <a class="item-link" href="https://github.com/almohsinkhan" target="_blank">NeuroFroge — Neural-network framework in C++ ↗</a>
           <span class="date">C++ · Deep Learning</span>
         </div>
         <p class="item-desc">
@@ -71,7 +80,7 @@
 
       <div class="item">
         <div class="item-header">
-          <a class="item-link" href="#" target="_blank">Corrective RAG / DocuTrust ↗</a>
+          <a class="item-link" href="https://github.com/almohsinkhan" target="_blank">Corrective RAG / DocuTrust ↗</a>
           <span class="date">Python · LangGraph · FastAPI</span>
         </div>
         <p class="item-desc">
@@ -81,7 +90,7 @@
 
       <div class="item">
         <div class="item-header">
-          <a class="item-link" href="#" target="_blank">Local AI Assistant ↗</a>
+          <a class="item-link" href="https://github.com/almohsinkhan" target="_blank">Local AI Assistant ↗</a>
           <span class="date">Python · Local Inference · Speech</span>
         </div>
         <p class="item-desc">
@@ -91,7 +100,7 @@
 
       <div class="item">
         <div class="item-header">
-          <a class="item-link" href="#" target="_blank">MagicRead — Gesture-controlled PDF reader ↗</a>
+          <a class="item-link" href="https://github.com/almohsinkhan" target="_blank">MagicRead — Gesture-controlled PDF reader ↗</a>
           <span class="date">Python · Computer Vision</span>
         </div>
         <p class="item-desc">
@@ -186,18 +195,18 @@
 
       <div class="item">
         <div class="item-header">
-          <span class="role">Generative AI for Computer Vision — <strong>NPTEL Elite</strong></span>
+          <span class="role">Generative AI for Computer Vision</span>
           <span class="date">Jul — Oct 2026</span>
         </div>
-        <p class="item-desc">IIT Guwahati · 12-week course · Score: 85% · 4 recommended credits</p>
+        <p class="item-desc">NPTEL · IIT Guwahati</p>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span class="role">Deep Learning for Natural Language Processing — <strong>NPTEL</strong></span>
+          <span class="role">Deep Learning for Natural Language Processing </span>
           <span class="date">Jul — Oct 2026</span>
         </div>
-        <p class="item-desc">IIT Kharagpur · 12-week course · Score: 53% · 4 recommended credits</p>
+        <p class="item-desc">NPTEL · IIT Kharagpur </p>
       </div>
 
       <div class="item">
@@ -239,21 +248,7 @@
         </div>
         <p class="item-desc">NPTEL</p>
       </div>
-    </section>
-
-    <!-- Notes & Writing -->
-    <section class="section">
-      <h2 class="section-title">Notes & Writing</h2>
-      <div class="item">
-        <div class="item-header">
-          <span class="role"><strong>Optimizing CPU matrix multiplication for neural networks</strong></span>
-          <span class="date">2026</span>
-        </div>
-        <p class="item-desc">
-          Technical notes and experiments around matrix-multiplication access patterns, cache behavior, loop structure, and performance in C++. This reflects a broader interest in understanding the systems beneath machine-learning workloads.
-        </p>
-      </div>
-    </section>
+    </section>>
 
     <!-- Outside the Code -->
     <section class="section">
@@ -267,6 +262,30 @@
   <footer class="footer">
     <p>Mohsin Khan · Gwalior, India · Updated November 2026</p>
   </footer>
+
+  <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+
+  function updateButtonText(theme) {
+    toggleBtn.textContent = theme === 'dark' ? 'light' : 'dark';
+  }
+
+  // Determine current active theme
+  const currentTheme = document.documentElement.getAttribute('data-theme') ||
+    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+  updateButtonText(currentTheme);
+
+  toggleBtn.addEventListener('click', () => {
+    const activeTheme = document.documentElement.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    
+    const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateButtonText(newTheme);
+  });
+</script>
 
 </body>
 </html>
