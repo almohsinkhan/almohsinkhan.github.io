@@ -70,82 +70,77 @@
 
       <div class="item">
         <div class="item-header">
-          <a class="item-link" href="https://github.com/almohsinkhan" target="_blank">NeuroFroge — Neural-network framework in C++ ↗</a>
-          <span class="date">C++ · Deep Learning</span>
+          <a class="item-link" href="https://github.com/almohsinkhan/AIChatBot" target="_blank" rel="noreferrer">AIChatBot — Local Real-Time Voice Assistant ↗</a>
+          <span class="date">Python · Ollama · Faster-Whisper</span>
         </div>
         <p class="item-desc">
-          A neural-network framework built from first principles, including N-dimensional tensors, matrix operations, linear layers, activation functions, cross-entropy loss, backpropagation, and SGD. Added mini-batch training, gradient accumulation, broadcasting, stride-based views, and zero-copy reshape/transpose operations. Trained a 784 → 128 → 10 classifier on Fashion-MNIST and experimented with memory access and matrix-multiplication optimizations.
+          Built a local voice conversation assistant designed for natural, real-time interactions on hardware with 4 GB of GPU VRAM.
         </p>
+        <ul class="project-highlights">
+          <li>Integrated Silero VAD, Faster-Whisper, Ollama, and Kokoro TTS into a modular speech pipeline.</li>
+          <li>Used sentence buffering and asynchronous TTS to stream responses, with barge-in interruption handling during playback.</li>
+          <li>Combined summaries with recent messages to preserve context while controlling prompt size and latency.</li>
+        </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <a class="item-link" href="https://github.com/almohsinkhan" target="_blank">Corrective RAG / DocuTrust ↗</a>
-          <span class="date">Python · LangGraph · FastAPI</span>
+          <a class="item-link" href="https://github.com/almohsinkhan/starArt" target="_blank" rel="noreferrer">StarArt — Terminal-Based Image-to-Art Generator ↗</a>
+          <span class="date">Python · OpenCV · SAM2</span>
         </div>
         <p class="item-desc">
-          A retrieval-augmented generation system designed to improve answers when the first retrieval attempt is weak. Uses LangGraph for workflow orchestration, FAISS for vector search, reranking, and a fallback search path. The project reflects my interest in retrieval quality, tool orchestration, and building LLM applications as testable software systems.
+          Developed a command-line tool that transforms images, videos, and live camera feeds into terminal-based artwork.
         </p>
+        <ul class="project-highlights">
+          <li>Implemented five rendering modes: ASCII, threshold, outline, silhouette segmentation, and video.</li>
+          <li>Combined grayscale conversion, thresholding, Canny edge detection, and customizable character gradients.</li>
+          <li>Integrated SAM2 point-based segmentation for object-focused rendering and extended processing to video and live camera input.</li>
+        </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <a class="item-link" href="https://github.com/almohsinkhan" target="_blank">Local AI Assistant ↗</a>
-          <span class="date">Python · Local Inference · Speech</span>
+          <a class="item-link" href="https://github.com/almohsinkhan/NeuroFroge" target="_blank" rel="noreferrer">NeuroFroge — Neural Network Framework from Scratch ↗</a>
+          <span class="date">C++ · Linear Algebra · Deep Learning</span>
         </div>
         <p class="item-desc">
-          An experiment in a voice-based assistant with an emphasis on running components locally. The workflow combines speech recognition, a local language model through Ollama, text-to-speech, and voice-activity detection. It explores how to make an assistant useful with fewer dependencies on cloud APIs and network access.
+          Built a neural-network framework from scratch in C++ to understand tensor representation, memory management, backpropagation, and optimization.
         </p>
+        <ul class="project-highlights">
+          <li>Implemented N-dimensional tensors, broadcasting, indexing, matrix multiplication, and stride-based zero-copy views for reshape and transpose operations.</li>
+          <li>Developed layers, activations, cross-entropy loss, gradient accumulation, SGD, and mini-batch training.</li>
+          <li>Trained a 784 → 128 → 10 Fashion-MNIST classifier at approximately 81% test accuracy; a five-epoch experiment took approximately 1.76 seconds after CPU-level optimization.</li>
+        </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <a class="item-link" href="https://github.com/almohsinkhan" target="_blank">MagicRead — Gesture-controlled PDF reader ↗</a>
-          <span class="date">Python · Computer Vision</span>
+          <span class="role"><a class="item-link" href="https://github.com/almohsinkhan/dolly-finetuning" target="_blank" rel="noreferrer">Transformer Fine-Tuning: BERT & Dolly 15K ↗</a></span>
+          <span class="date">PyTorch · Transformers · PEFT · LoRA</span>
         </div>
         <p class="item-desc">
-          A hands-free PDF-reading prototype using OpenCV and MediaPipe to interpret gestures, PyMuPDF to work with PDF documents, and Tkinter for the interface.
+          Explored supervised BERT classification and parameter-efficient instruction tuning with a causal language model.
         </p>
+        <ul class="project-highlights">
+          <li>Fine-tuned BERT on IMDB sentiment classification, reporting 0.9675 ROC-AUC, approximately 92.57% precision, and 94.64% recall.</li>
+          <li>Applied LoRA with rank 8 and alpha 16 to the Databricks Dolly 15K dataset across QA, summarization, classification, and extraction tasks.</li>
+          <li>Reduced training to approximately 540K of 494.6M parameters (0.11%). See the <a class="item-link" href="https://github.com/almohsinkhan/Fine-Tuning-an-LLM" target="_blank" rel="noreferrer">LLM fine-tuning experiments ↗</a>.</li>
+        </ul>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span class="role"><strong>Document Denoising</strong></span>
-          <span class="date">PyTorch · Image Restoration</span>
+          <a class="item-link" href="https://github.com/almohsinkhan/local-ai-agent" target="_blank" rel="noreferrer">Local AI Agent — Modular Personal AI Assistant ↗</a>
+          <span class="date">Python · LangGraph · LangChain</span>
         </div>
         <p class="item-desc">
-          Explored encoder–decoder and U-Net-style architectures for grayscale document denoising using paired noisy and clean document images. The focus was on preparing aligned data and evaluating deep-learning approaches to image restoration.
+          Developed a modular personal assistant with LangGraph orchestration, persistent memory, and hybrid local/cloud LLM inference.
         </p>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="role"><strong>DenseNet121 Image Classification</strong></span>
-          <span class="date">PyTorch · Transfer Learning</span>
-        </div>
-        <p class="item-desc">
-          Fine-tuned a pretrained DenseNet121 model for an image-classification task, worked through GPU-memory constraints, and evaluated the trained model on a held-out test set. Recorded test accuracy: approximately 89.7%.
-        </p>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="role"><strong>Egg Dataset Exploration</strong></span>
-          <span class="date">Python · Computer Vision</span>
-        </div>
-        <p class="item-desc">
-          Prepared and explored a Roboflow egg-image dataset with train, validation, and test splits. Investigated image properties, annotation structure, and edge cases such as partial eggs and low-contrast boundaries as groundwork for segmentation experiments.
-        </p>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <span class="role"><strong>Recommendation System</strong></span>
-          <span class="date">Python · Machine Learning</span>
-        </div>
-        <p class="item-desc">
-          Implemented popularity-based and content-based recommendation approaches, exploring how item features and interaction patterns can be used to produce relevant suggestions.
-        </p>
+        <ul class="project-highlights">
+          <li>Added privacy-aware routing, Ollama fallback, and a cloud circuit breaker alongside tools for email, calendars, tasks, RAG, web search, files, and expenses.</li>
+          <li>Used Playwright for browser form automation with missing-information handling and human approval before submission.</li>
+          <li>Connected CLI and Telegram through SQLite-backed coordination, with token-aware history, truncated tool output, caching, and a 64% prompt reduction.</li>
+        </ul>
       </div>
     </section>
 
@@ -247,6 +242,20 @@
           <span class="date">Apr 2026</span>
         </div>
         <p class="item-desc">NPTEL</p>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="section">
+      <h2 class="section-title">Writing</h2>
+      <div class="item">
+        <div class="item-header">
+          <a class="item-link" href="https://medium.com/@almohsinkhan2004/the-real-intuition-behind-significance-level-and-hypothesis-testing-531b2b88fa70" target="_blank" rel="noreferrer">The Real Intuition Behind Significance Level and Hypothesis Testing ↗</a>
+          <span class="date">Medium · Statistics</span>
+        </div>
+        <p class="item-desc">
+          An intuitive explanation of significance levels and hypothesis testing, focusing on how statistical evidence supports decisions and how to interpret test results.
+        </p>
       </div>
     </section>
 

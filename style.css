@@ -182,6 +182,17 @@ body {
   color: var(--text-muted);
 }
 
+.project-highlights {
+  margin: 0.55rem 0 0 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.project-highlights li {
+  margin-bottom: 0.3rem;
+  padding-left: 0.2rem;
+}
+
 .item-link {
   color: var(--link);
   text-decoration: none;
@@ -223,4 +234,12 @@ body {
 .footer {
   font-family: var(--mono-font);
   letter-spacing: -0.02em;
+}
+
+@media (max-width: 560px) {
+  .item-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
 }
